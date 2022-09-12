@@ -19,8 +19,6 @@ while beebo<=DProtein
     switch beebo
     case 1
             FProtein(beebo)=replace(SpecProtein(beebo),'M',M);     
-    case DProtein
-            FProtein(beebo)=stop(stopRan);
         otherwise
             FProtein(beebo)=SpecProtein(beebo);
 
@@ -61,6 +59,8 @@ while beebo<=DProtein
             FProtein(beebo)=replace(FProtein(beebo),'Y',Y(YRan));
 
             FProtein(beebo)=replace(FProtein(beebo),'V',V(VRan));
+
+            FProtein(beebo)=replace(SpecProtein(beebo),'x',stop(stopRan));
     end
 beebo=beebo+1;
 ARan=randi([1,length(A)]);
