@@ -24,8 +24,8 @@ F=["TTT";"TTC"];%phenylalanine
 P=["CCT";"CCC";"CCA";"CCG"];%proline
 S=["TCT";"TCC";"TCA";"TCG"];%serine
 T=["ACT";"ACC";"ACA";"ACG"];%threonine
-W=["TAT";"TAC"];%tryptophan
-Y="TGG";%tyrosine
+Y=["TAT";"TAC"];%tyrosine
+W="TGG";%tryptophan
 V=["GTT";"GTC";"GTA";"GTG"];%valine
 stop=["TAA";"TAG";"TGA"];
 
