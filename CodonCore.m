@@ -1,8 +1,5 @@
-%Core code for ProteinStringMaker.m
+%Core code for GeneStringMaker.m
 %Do not edit
-
-%The author of this program is not responsible for system crashes 
-%due to unauthorized changes to the core code"
 
 
 
