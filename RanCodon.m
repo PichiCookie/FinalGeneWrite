@@ -4,7 +4,6 @@
 
 run CodonSpec.m
 
-
 DProtein=strlength(SpecProtein);
 FProtein=string(zeros(1,DProtein));
 SpecProtein=upper(SpecProtein);
@@ -18,49 +17,29 @@ beebo=1;
 while beebo<=DProtein
     switch beebo
     case 1
-            FProtein(beebo)=replace(SpecProtein(beebo),'M',M);     
+            FProtein(beebo)=replace(SpecProtein(beebo),'M',M);      
         otherwise
             FProtein(beebo)=SpecProtein(beebo);
-
             FProtein(beebo)=replace(FProtein(beebo),'a',A(ARan));
-
             FProtein(beebo)=replace(FProtein(beebo),'R',R(RRan));
-
-            FProtein(beebo)=replace(FProtein(beebo),'N',N(NRan));
-    
+            FProtein(beebo)=replace(FProtein(beebo),'N',N(NRan));    
             FProtein(beebo)=replace(FProtein(beebo),'D',D(DRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'c',C(CRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'Q',Q(QRan));
-
-            FProtein(beebo)=replace(FProtein(beebo),'E',E(ERan));
-    
+            FProtein(beebo)=replace(FProtein(beebo),'E',E(ERan));    
             FProtein(beebo)=replace(FProtein(beebo),'g',G(GRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'H',H(HRan));
-
-            FProtein(beebo)=replace(FProtein(beebo),'I',I(IRan));
-            
+            FProtein(beebo)=replace(FProtein(beebo),'I',I(IRan));            
             FProtein(beebo)=replace(FProtein(beebo),'L',L(LRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'K',K(KRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'F',F(FRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'P',P(PRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'S',S(SRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'t',T(TRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'W',W(WRan));
-
             FProtein(beebo)=replace(FProtein(beebo),'Y',Y(YRan));
-
-            FProtein(beebo)=replace(FProtein(beebo),'V',V(VRan));
-
-            FProtein(beebo)=replace(SpecProtein(beebo),'x',stop(stopRan));
+            FProtein(beebo)=replace(FProtein(beebo),'V',V(VRan));            
+            FProtein(beebo)=replace(FProtein(beebo),'X',stop(stopRan));
     end
 beebo=beebo+1;
 ARan=randi([1,length(A)]);
